@@ -1,0 +1,102 @@
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+
+  flex-direction: column;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+.form-container form {
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  padding: 20px;
+  background-color: #fff;
+}
+.form-container form .title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+
+.form-container form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+}
+
+.form-container form span {
+  /* display:block ; */
+  background-color: #000;
+  right: 1.7rem;
+  top: -0.7rem;
+  position: relative;
+  color: rgb(25, 204, 25);
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.2s;
+  z-index: 100;
+  height: 0;
+  width: 0;
+}
+
+.form-container form .black-button {
+  border: 1px solid #000;
+  border-radius: 0;
+  background-color: #000;
+  color: #fff;
+  width: 250px;
+}
+
+.form-container form .normal-btn {
+  border: 1px solid #c2712e;
+  border-radius: 0;
+  background-color: #efbe4b;
+  color: #fff;
+  width: 100%;
+}
+
+.form-container form .verify-tick {
+  display: flex;
+  /* position:relative; */
+}
+
+.form-container form .black-button:hover {
+  border: 1px solid #000;
+  background: #000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+/* //---- Tab index ------// */
+
+.form-container .user {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container .user-label{
+    display: flex;
+    width:100%;
+    font-weight: 600;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    background-color:pink;
+    color:rgb(195, 85, 85);
+}
+.form-container .user-flex {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container .radio{
+  border:3px outset #67ffb3;
+  font-weight: bold;
+}
