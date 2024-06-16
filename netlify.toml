@@ -1,0 +1,21 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+
+  PORT = 8080
+  DEV_MODE= "development"
+  MONGO_URL= "mongodb+srv://shubhamyadav456ss:shubham456ss.com@ecommerce.cc7dw56.mongodb.net/ecommerce"
+  JWT_SECRET = "QWert%&*()108"
+  BRAINTREE_MERCHANT_ID = "4hrxfr2fmrvc9zp6"
+  BRAINTREE_PUBLIC_KEY = "grc3n765pytj85tb"
+  BRAINTREE_PRIVATE_KEY = "4862fb1e5ee518d43fea837ba2bdafe0"
