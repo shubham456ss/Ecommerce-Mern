@@ -7,9 +7,9 @@ import authRoutes from "./routes/authRoutes.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
-import { fileURLToPath } from "url";
+// import { fileURLToPath } from "url";
 
-const __filename = fileURLToPath(import.meta.url);
+// const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.resolve()
 
 //configure env
@@ -33,14 +33,13 @@ app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
 // rest api
-// app.get("/", (req, res) => {
-//   res.send("<h1>Welcome to ecommerce app</h1>");
-// });
-
-app.use("*", (req, res) => {
-
-  res.sendFile(path.join(__dirname,'./client/build/index.html'))
+app.get("/", (req, res) => {
+  res.send("<h1>Welcome to ecommerce app</h1>");
 });
+
+// app.use("*", (req, res) => {
+//   res.sendFile(path.join(__dirname,'./client/build/index.html'))
+// });
 
 const PORT = process.env.PORT || 8080;
 //run listen
